@@ -1,0 +1,514 @@
+
+/* Подключение красивых шрифтов*/
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Fredoka+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Baloo+2:wght@700&display=swap');
+
+
+body {
+  font-family: 'Varela Round', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Fredoka One', cursive;
+}
+
+
+/* Уточнения для конкретных элементов */
+.main-title {
+    font-size: 5.5rem;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 2.2rem;
+    letter-spacing: 0.5px;
+}
+
+
+
+/* Сделать текст более "пухлым" */
+.btn {
+  font-family: inherit;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Закруглённые буквы в навигации */
+.nav-links a {
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* Особый стиль для отзывов */
+.review-item blockquote {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+/* для лучшей типографики */
+p {
+    font-size: 1.1rem;
+    color: #2e2c2c;
+    line-height: 1.7;
+}
+
+.nav-links a {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.review-item blockquote {
+    font-style: italic;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 3.5rem;
+    text-align: center;
+    color: #6a3cb5;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #6a3cb5;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+/* Шапка */
+header {
+    background-color: #6a3cb5;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #e67e22;
+}
+
+.main-title-container {
+    background-color: #6a3cb5;
+    padding: 70px 0 40px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.main-title {
+    font-size: 7.5rem;
+    font-weight: bold;
+    color: #eb7f3c;
+    text-shadow: 
+        2px 2px 0 black,
+        -2px -2px 0 white;
+        
+    margin: 0;
+    padding: 0;
+}
+
+/* Главная секция */
+
+
+
+.main {
+    background-color: #6a3cb5;
+    color: white;
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.main-text {
+    flex: 1;
+}
+
+.main-text h2 {
+    color: white;
+    text-align: left;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.main-text p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.main-image {
+    flex: 1;
+    text-align: right;
+}
+
+.main-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+
+/* Простая анимация при наведении */
+.main-image img {
+    transition: transform 0.3s ease;
+}
+.main-image img:hover {
+    transform: scale(1.05);
+}
+
+.main .btn {
+    font-size: 1.2rem;
+    padding: 15px 40px;
+}
+
+/* О игре */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-text {
+    flex: 1;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.about-image {
+    flex: 1;
+    text-align: center;
+}
+
+.about-image img {
+    max-width: 75%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Комплектация */
+.components-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.component-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.component-image {
+    margin-bottom: 15px;
+}
+
+.component-image img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.component-count {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #6a3cb5;
+    margin: 10px 0;
+}
+
+/* Анимация для компонентов */
+.component-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.component-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Отзывы */
+.reviews-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.review-item {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.review-item blockquote {
+    font-style: italic;
+    margin-bottom: 20px;
+    quotes: "“" "”" "‘" "’";
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.review-item blockquote:before {
+    content: open-quote;
+}
+
+.review-item blockquote:after {
+    content: close-quote;
+}
+
+.review-author {
+    font-weight: normal;
+    text-align: right;
+}
+
+.review-author strong {
+    color: #6a3cb5;
+}
+
+
+/* Анимация появления отзывов */
+.review-item {
+    opacity: 0;
+    transform: perspective(500px) rotateX(15deg) translateY(50px);
+    transition: all 0.9s cubic-bezier(0.215, 0.61, 0.355, 1);
+    filter: blur(2px);
+}
+
+.review-item.visible {
+    opacity: 1;
+    transform: perspective(500px) rotateX(0) translateY(0);
+    filter: blur(0);
+}
+
+
+
+/* Форма заказа */
+.order-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+.price-info {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 300px;
+    margin: 0 auto 30px;
+}
+
+.price-info strong {
+    color: #e67e22;
+    font-size: 1.5rem;
+}
+
+#totalPrice {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 10px;
+    
+}
+
+
+
+/* Формы */
+.form-group {
+    margin-bottom: 25px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #6a3cb5;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#orderResult, #contactResult {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e8f5e9;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+/* Контакты */
+.contacts-content {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact-form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    flex: 1;
+}
+
+/* Подвал */
+footer {
+    background-color: #6a3cb5;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Адаптация*/
+
+/* Ноутбуки (1280-1440px) */
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1100px;
+    }
+    
+    .main-content {
+        gap: 30px;
+    }
+    
+    .components-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Небольшие ноутбуки (1024-1280px) */
+@media (max-width: 1280px) {
+    .container {
+        max-width: 1000px;
+        padding: 0 30px;
+    }
+    
+    .main-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .about-content {
+        flex-direction: column;
+    }
+    
+    .reviews-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Планшеты и маленькие ноутбуки (768-1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        max-width: 800px;
+    }
+    
+    .components-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .contacts-content {
+        flex-direction: column;
+    }
+}

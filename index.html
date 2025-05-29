@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замок Монстров - Настольная игра</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+        
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#about">Об игре</a></li>
+                    <li><a href="#components">Комплектация</a></li>
+                    <li><a href="#reviews">Отзывы</a></li>
+                    <li><a href="#order">Заказать</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class = "main-title-container">
+        <h1 class = "main-title">Замок монстров</h1>
+    </div>
+
+    <section id="main" class="main">
+        <div class="container">
+            
+            <div class="main-content">
+                <div class="main-text">
+                    <h2>Захватывающая настольная игра для всей семьи</h2>
+                    <p>2-4 игрока | 8+ лет | 30 минут игры</p>
+                    <a href="#order" class="btn">Заказать сейчас за 1990₽</a>
+                </div>
+                <div class="main-image">
+                    <img src="images/коробка.png" alt="Коробка игры">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>Об игре</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>"Замок Монстров" - это веселая стратегическая игра, где игроки соревнуются за контроль над
+                        замком, населенным забавными монстрами.</p>
+                    <p>Игра разработана для 2-4 игроков в возрасте от 8 лет. Среднее время партии составляет около 30
+                        минут, что делает её идеальной для семейного вечера или встречи с друзьями.</p>
+                    <p>Размеры игровых компонентов: карты - 5.7×8.8 см, поле - 17.9×13 см.</p>
+                </div>
+                <div class="about-image">
+                    <img src="images/поле.jpeg" alt="Игровое поле">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="components" class="components">
+        <div class="container">
+            <h2>Что в коробке</h2>
+            <div class="components-grid">
+                <div class="component-item">
+                    <div class="component-image">
+                        <img src="images/планшет3.jpeg" alt="Планшеты">
+                    </div>
+                    <span class="component-count">4</span>
+                    <p>двухсторонних планшета</p>
+                </div>
+                <div class="component-item">
+                    <div class="component-image">
+                        <img src="images/маркеры.jpeg" alt="Маркеры">
+                    </div>
+                    <span class="component-count">4</span>
+                    <p>маркера</p>
+                </div>
+                <div class="component-item">
+                    <div class="component-image">
+                        <img src="images/карты.jpeg" alt="Карты">
+                    </div>
+                    <span class="component-count">83</span>
+                    <p>карты</p>
+                </div>
+                <div class="component-item">
+                    <div class="component-image">
+                        <img src="images/правила.jpeg" alt="Правила">
+                    </div>
+                    <span class="component-count">1</span>
+                    <p>правила игры</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>Отзывы</h2>
+            <div class="reviews-list">
+                <div class="review-item">
+                    <blockquote>Отличная игра для семьи! Дети в восторге от монстров, а нам нравится стратегическая
+                        составляющая.</blockquote>
+                    <div class="review-author">- <strong>Анна Петрова</strong></div>
+                </div>
+                <div class="review-item">
+                    <blockquote>Быстро освоили правила. Теперь это наша любимая игра для вечеринок.</blockquote>
+                    <div class="review-author">- <strong>Иван Смирнов</strong></div>
+                </div>
+                <div class="review-item">
+                    <blockquote>Качественные компоненты и интересный игровой процесс. Рекомендую!</blockquote>
+                    <div class="review-author">- <strong>Ольга Козлова</strong></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="order" class="order">
+        <div class="container">
+            <h2>Заказать игру</h2>
+            <div class="price-info">
+                <p>Цена: <strong>1990₽</strong> за 1 экземпляр</p>
+                
+            </div>
+            <div class="order-form">
+                <form id="orderForm">
+                    <div class="form-group">
+                        <label for="name">Имя:</label>
+                        <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.ru" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (123) 456-78-90" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Количество:</label>
+                        <select id="quantity" name="quantity">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn">Заказать 1 шт. за 1990₽</button>
+                </form>
+                <div id="orderResult"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-content">
+                <div class="contact-info-box">
+                    <div class="contact-info">
+                        <h3>Свяжитесь с нами</h3>
+                        <p>Email: info@monstercastle.ru</p>
+                        <p>Телефон: +7 (123) 456-78-90</p>
+                        <p>Адрес: г. Москва, ул. Игровая, 15</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">Ваше имя:</label>
+                            <input type="text" id="contactName" name="contactName" placeholder="Мария Сидорова"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contactEmail">Ваш Email:</label>
+                            <input type="email" id="contactEmail" name="contactEmail"
+                                placeholder="your.email@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Сообщение:</label>
+                            <textarea id="message" name="message" rows="4"
+                                placeholder="Напишите ваш вопрос или комментарий" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Отправить сообщение</button>
+                    </form>
+                    <div id="contactResult"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Замок Монстров. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
